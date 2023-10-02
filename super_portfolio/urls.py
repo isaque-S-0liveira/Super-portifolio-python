@@ -28,6 +28,7 @@ router = routers.DefaultRouter()
 router.register(r"profiles", ProfileViewSet)
 router.register(r"projects", ProjectViewSet)
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
